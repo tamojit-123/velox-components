@@ -1,0 +1,89 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0; /* White background */
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glass-input input[type='date'] {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 0, 255, 0.2); /* Light blue tint */
+  color: #000; /* Dark text */
+  box-sizing: border-box;
+}
+
+.glass-input button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 0, 255, 0.4); /* Light blue tint */
+  color: #000; /* Dark text */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.glass-input button:hover {
+  background: rgba(0, 0, 255, 0.6); /* Darker blue on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .form-container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .glass-input {
+    padding: 1.5rem;
+  }
+
+  .glass-input input,
+  .glass-input button {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-input {
+    padding: 1rem;
+  }
+
+  .glass-input input,
+  .glass-input button {
+    padding: 0.5rem;
+  }
+}

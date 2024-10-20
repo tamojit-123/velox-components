@@ -1,14 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import Login from './Login';
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import Login from './Login'
 
 describe('<Login />', () => {
   test('it should mount', () => {
-    render(<Login />);
+    render(<Login />)
 
-    const Login = screen.getByTestId('Login');
+    const Login = screen.getByTestId('Login')
 
-    expect(Login).toBeInTheDocument();
-  });
-});
+    expect(Login).toBeInTheDocument()
+  })
+})

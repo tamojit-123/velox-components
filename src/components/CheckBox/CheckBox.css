@@ -1,0 +1,60 @@
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f0f0; /* White background */
+}
+
+.glass-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  color: #333; /* Dark text */
+}
+
+.glass-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: rgba(100, 100, 255, 0.2); /* Light blue tint */
+  border-radius: 5px;
+  border: 1px solid rgba(100, 100, 255, 0.4); /* Light blue border */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.glass-checkbox input:checked ~ .checkmark {
+  background-color: rgba(100, 100, 255, 0.6); /* Darker blue when checked */
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.glass-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}

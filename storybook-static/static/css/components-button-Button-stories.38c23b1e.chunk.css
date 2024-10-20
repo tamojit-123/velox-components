@@ -1,0 +1,48 @@
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.storybook-button--primary {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #818181, #e4e4e4);
+  color: #0c0c0c;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.storybook-button--secondary {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(79, 79, 255, 0.2),
+    rgba(121, 218, 255, 0.2)
+  );
+  color: #0c0c0c;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.storybook-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+
+/*# sourceMappingURL=components-button-Button-stories.38c23b1e.chunk.css.map*/
