@@ -2,7 +2,7 @@
 import Login from './Login';
 
 export default {
-  title: "Login",
+  title: 'component/Login',
 };
 
 export const Default = () => <Login />;
