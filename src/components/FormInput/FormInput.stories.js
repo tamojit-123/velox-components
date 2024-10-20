@@ -1,12 +1,12 @@
 /* eslint-disable */
-import FormInput from './FormInput';
+import FormInput from './FormInput'
 
 export default {
-  title: "component/FormInput",
-};
+  title: 'component/FormInput',
+}
 
-export const Default = () => <FormInput />;
+export const Default = () => <FormInput />
 
 Default.story = {
   name: 'default',
-};
+}

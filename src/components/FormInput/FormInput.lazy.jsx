@@ -1,11 +1,11 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react'
 
-const LazyFormInput = lazy(() => import('./FormInput'));
+const LazyFormInput = lazy(() => import('./FormInput'))
 
-const FormInput = props => (
+const FormInput = (props) => (
   <Suspense fallback={null}>
     <LazyFormInput {...props} />
   </Suspense>
-);
+)
 
-export default FormInput;
+export default FormInput

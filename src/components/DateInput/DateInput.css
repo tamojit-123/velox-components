@@ -33,15 +33,15 @@
   }
 }
 
-.glass-input input {
+.glass-input input[type='date'] {
   display: block;
   width: 100%;
   padding: 0.7rem;
   margin-bottom: 1.5rem;
   border: none;
   border-radius: 10px;
-  background: rgba(0, 0, 255, 0.2);
-  color: #000;
+  background: rgba(0, 0, 255, 0.2); /* Light blue tint */
+  color: #000; /* Dark text */
   box-sizing: border-box;
 }
 
@@ -50,14 +50,14 @@
   padding: 0.7rem;
   border: none;
   border-radius: 10px;
-  background: rgba(0, 0, 255, 0.4);
-  color: #000;
+  background: rgba(0, 0, 255, 0.4); /* Light blue tint */
+  color: #000; /* Dark text */
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .glass-input button:hover {
-  background: rgba(0, 0, 255, 0.6);
+  background: rgba(0, 0, 255, 0.6); /* Darker blue on hover */
 }
 
 /* Media Queries */

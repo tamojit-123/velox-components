@@ -1,14 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import CheckBox from './CheckBox';
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import CheckBox from './CheckBox'
 
 describe('<CheckBox />', () => {
   test('it should mount', () => {
-    render(<CheckBox />);
+    render(<CheckBox />)
 
-    const CheckBox = screen.getByTestId('CheckBox');
+    const CheckBox = screen.getByTestId('CheckBox')
 
-    expect(CheckBox).toBeInTheDocument();
-  });
-});
+    expect(CheckBox).toBeInTheDocument()
+  })
+})

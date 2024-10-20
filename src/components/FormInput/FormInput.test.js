@@ -1,14 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import FormInput from './FormInput';
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import FormInput from './FormInput'
 
 describe('<FormInput />', () => {
   test('it should mount', () => {
-    render(<FormInput />);
+    render(<FormInput />)
 
-    const FormInput = screen.getByTestId('FormInput');
+    const FormInput = screen.getByTestId('FormInput')
 
-    expect(FormInput).toBeInTheDocument();
-  });
-});
+    expect(FormInput).toBeInTheDocument()
+  })
+})
